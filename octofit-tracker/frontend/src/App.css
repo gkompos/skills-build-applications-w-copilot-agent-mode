@@ -1,0 +1,111 @@
+:root {
+  --octofit-ink: #14324a;
+  --octofit-muted: #56718a;
+  --octofit-primary: #0f7ea8;
+  --octofit-primary-dark: #0b6688;
+  --octofit-accent: #ef8f00;
+  --octofit-surface: #f4f9ff;
+  --octofit-surface-strong: #e7f2ff;
+  --octofit-nav-start: #103b57;
+  --octofit-nav-end: #0f7ea8;
+}
+
+.app-shell {
+  background:
+    radial-gradient(circle at 15% 15%, rgba(15, 126, 168, 0.18), transparent 28%),
+    radial-gradient(circle at 88% 5%, rgba(239, 143, 0, 0.2), transparent 30%),
+    linear-gradient(180deg, #ecf6ff 0%, #fdfefe 50%, #eef6ff 100%);
+  color: var(--octofit-ink);
+}
+
+body {
+  color: var(--octofit-ink);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #0c3856;
+}
+
+a {
+  color: var(--octofit-primary-dark);
+}
+
+a:hover {
+  color: #094f6c;
+}
+
+.octofit-nav {
+  background: linear-gradient(95deg, var(--octofit-nav-start), var(--octofit-nav-end));
+  box-shadow: 0 8px 24px rgba(16, 59, 87, 0.26);
+}
+
+.octofit-nav .navbar-brand,
+.octofit-nav .nav-link {
+  color: #f7fbff;
+}
+
+.octofit-nav .nav-link:hover,
+.octofit-nav .nav-link.active {
+  color: #ffd492;
+}
+
+.octofit-nav .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.45);
+}
+
+.octofit-nav-toggler-icon {
+  filter: invert(1) brightness(1.8);
+}
+
+.octofit-brand-logo {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 10px;
+  padding: 3px;
+}
+
+.card {
+  border: 1px solid rgba(15, 126, 168, 0.2);
+  background-color: var(--octofit-surface);
+}
+
+.btn,
+.btn-outline-primary {
+  --bs-btn-color: #0f5f80;
+  --bs-btn-border-color: #0f7ea8;
+  --bs-btn-hover-bg: #0f7ea8;
+  --bs-btn-hover-border-color: #0f7ea8;
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-active-bg: #0b6688;
+  --bs-btn-active-border-color: #0b6688;
+  --bs-btn-active-color: #ffffff;
+  font-weight: 600;
+}
+
+.table {
+  --bs-table-color: #17384d;
+  --bs-table-bg: #f7fbff;
+  --bs-table-striped-bg: var(--octofit-surface-strong);
+  border-color: rgba(15, 126, 168, 0.25);
+}
+
+.table thead th {
+  background-color: #0f7ea8;
+  color: #ffffff;
+}
+
+.lead,
+.text-secondary {
+  color: var(--octofit-muted) !important;
+}
+
+.alert-light {
+  background-color: #eef7ff;
+}
